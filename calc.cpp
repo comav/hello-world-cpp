@@ -1,7 +1,13 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
+    int input{};
+
+    std::cout << "Enter an integer: ";
+
+    std::cin >> input;
+
+    std::cout << "Double that number: " << input * 2 << std::endl;
+
     return 0;
 }
