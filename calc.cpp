@@ -1,13 +1,17 @@
 #include <iostream>
 
 int main() {
-    int input{};
+    int num1{};
+    int num2{};
 
-    std::cout << "Enter an integer: ";
+    std::cout << "Enter an integer: " << "\n";
+    std::cin >> num1;
 
-    std::cin >> input;
+    std::cout << "Enter one more integer: " << "\n";
+    std::cin >> num2;
 
-    std::cout << "Double that number: " << input * 2 << std::endl;
+    std::cout << num1 << " + " << num2 << " is " << num1 + num2 << "\n";
+    std::cout << num1 << " - " << num2 << " is " << num1 - num2 << "\n";
 
     return 0;
 }
