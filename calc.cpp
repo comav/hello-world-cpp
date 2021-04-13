@@ -1,6 +1,17 @@
 #include <iostream>
+#include <string>
 
-int main() {
+void greetUser() {
+    std::cout << "What is your name?" << "\n";
+
+    std::string username;
+
+    std::cin >> username;
+
+    std::cout << "Hello, " << username << "!\n";
+}
+
+void plusMinus() {
     int num1{};
     int num2{};
 
@@ -12,6 +23,18 @@ int main() {
 
     std::cout << num1 << " + " << num2 << " is " << num1 + num2 << "\n";
     std::cout << num1 << " - " << num2 << " is " << num1 - num2 << "\n";
+}
 
-    return 0;
+int main() {
+    std::cout << "What to run? \n 1. Greet user \n 2. Add-distract \n Please type your answer and hit enter \n";
+
+    short userChoice{};
+
+    std::cin >> userChoice;
+
+    if (userChoice == 1) {
+        greetUser();
+    } if (userChoice == 2) {
+        plusMinus();
+    }
 }
